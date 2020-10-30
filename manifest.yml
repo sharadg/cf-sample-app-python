@@ -1,0 +1,10 @@
+---
+applications:
+- name: cf-sample-app-python
+  memory: 128MB
+  buildpack: python_buildpack
+  services:
+    - credhub-demo
+  env:
+    PIP_DISABLE_PIP_VERSION_CHECK: 1
+    PIP_NO_WARN_SCRIPT_LOCATION: 0
